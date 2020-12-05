@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Cabeçalho -->
+<header class="container-header">
+    <img src="imagens/logo.png" class="logo">
+    <div class="menu">
+        <nav class="nav col-sm-6 col-md-12 col-lg-12">
+            <a class="nav-link active" href="#lancamentos">Lançamentos</a>
+            <a class="nav-link"> | </a>
+            <a class="nav-link" href="#destaque">Em destaque</a>
+            <a class="nav-link"> | </a>
+            <a class="nav-link" href="#avaliacoes">Avaliações</a>
+            <a class="nav-link"> | </a>
+            <a class="nav-link" href="#entrevistas">Entrevistas & Making Of</a>
+            <a class="nav-link"> | </a>
+            <a class="nav-link" href="#novidades">Novidades</a>
+            <a class="nav-link"> | </a>
+            <a class="nav-link" href="#sobre">Sobre</a>
+            <div class="col-md">
+                <div id="barra-pesquisa">
+                    <form class='form'>
+                        <div class="input-group col-md-12">
+                            <input type="text" class="search-query form-control" placeholder="Procure um filme" />
+                            <span class="input-group-btn">
+                                <button class="btn btn-danger" type='submit'>
+                                    <span class=" glyphicon glyphicon-search"></span>
+                                </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <h1 id="lancamentos">Lançamentos</h1>
+    <main class="container-main">
+        <div class='error'> </div>
+        <div class='selectedFilm'> </div>
+        <div class='container'>
+
+            <ul class='films'>
+
+            </ul>
+        </div> 
+
+        <!-- <section class="row-lancamentos">
+            <div class="container">
+                <h1 id="lancamentos">Lançamentos</h1>
+                <div id="carouselfilmes" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row col-sm-12 col-md-12 col-lg-6">
+                                <iframe width="600" height="400"
+                                    src="https://www.youtube.com/embed/av2jODMFu6M"></iframe>
+                            </div>
+                            <div class="row col-sm-12 col-md-6 col-lg-6"></div>
+                            <h2>Capitã Marvel</h2>
+                            <p><b>Sinopse:</b> Capitã Marvel, parte do exército de elite dos Kree, uma raça
+                                alienígena, encontra-se no meio de uma batalha entre seu povo e os Skrulls.
+                                Ao tentar impedir uma invasão de larga escala na Terra, em 1995, ela tem
+                                memórias recorrentes de uma outra vida, como Carol Danvers, agente da Força
+                                Aérea norte-americana. Com a ajuda de Nick Fury, Capitã Marvel precisa
+                                descobrir os segredos de seu passado e pôr um fim ao conflito intergalático
+                                com os Skrulls. </p>
+                            <p><b>Direção:</b> Anna Boden e Ryan Fleck &nbsp &nbsp &nbsp</p>
+                            <p><b>Roteiro:</b> Meg LeFauve, Nicole Perlman, Geneva Robertson-Dworet, Liz
+                                Flahive, Carly Mensch, Anna Boden e Ryan Fleck </p>
+                            <p><b>Estreia:</b> 2019 </p>
+                            <p><b>Elenco:</b> Brie Larson, Samuel L. Jackson, Ben Mendelsohn e Annette Bening </p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row col-sm-12 col-md-6 col-lg-6">
+                                <iframe width="600" height="400"
+                                    src="https://www.youtube.com/embed/4QRdB4RAQMs"></iframe>
+                            </div>
+                            <div class="row col-sm-12 col-md-6 col-lg-6"></div>
+                            <h2>Vingadores: Ultimato</h2>
+                            <p><b>Sinopse:</b> Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de
+                                lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço
+                                sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã
+                                louco. </p>
+                            <p><b>Direção:</b> Joe Russo e Anthony Russo</p>
+                            <p><b>Roteiro:</b> Christopher Markus e Stephen </p>
+                            <p><b>Estreia:</b> 2019 </p>
+                            <p><b>Elenco:</b> Brie Larson, Samuel L. Jackson, Ben Mendelsohn e Annette Bening </p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row col-sm-12 col-md-6 col-lg-6">
+                                <iframe width="600" height="400"
+                                    src="https://www.youtube.com/embed/8XrFAXykgoc"></iframe>
+                            </div>
+                            <div class="row col-sm-12 col-md-6 col-lg-6"></div>
+                            <h2>Mulher Maravilha 1984</h2>
+                            <p><b>Sinopse:</b> Como arqueóloga, a Diana que trabalha no museu Smithsonian, é uma
+                                Mulher-Maravilha que tem super poderes extraordinários, podendo ser a heroína mais forte
+                                do mundo. Em 1984, a Mulher-Maravilha está em um desesperador perigo mortal na face de
+                                uma enorme conspiração do empresário Max, que canta alto para satisfazer os desejos das
+                                pessoas, e uma inimiga misteriosa, a Mulher-Leopardo (Kristen Wiig). A Mulher Maravilha
+                                pode impedir o colapso do mundo sozinha? </p>
+                            <p><b>Direção:</b> Patty Jenkins </p>
+                            <p><b>Roteiro:</b> Patty Jenkins, Geoff Johns e David Callaham </p>
+                            <p><b>Estreia:</b> 2020 </p>
+                            <p><b>Elenco:</b> Gal Gadot, Chris Pine, Kristen Wiig, Pedro Pascal </p>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row col-sm-12 col-md-6 col-lg-6">
+                                <iframe width="600" height="400"
+                                    src="https://www.youtube.com/embed/PEvCzJulUZI"></iframe>
+                            </div>
+                            <div class="row col-sm-12 col-md-6 col-lg-6"></div>
+                            <h2>Aves de Rapina</h2>
+                            <p><b>Sinopse:</b> Depois de se aventurar com o Coringa, Arlequina se junta a Canário Negro,
+                                Caçadora e Renee Montoya para salvar a vida de uma garotinha do criminoso Máscara Negra
+                                em Gotham City. </p>
+                            <p><b>Direção:</b> Cathy Yan</p>
+                            <p><b>Roteiro:</b> Meg LeFauve, Nicole Perlman, Geneva Robertson-Dworet, Liz
+                                Flahive, Carly Mensch, Anna Boden e Ryan Fleck </p>
+                            <p><b>Estreia:</b> 2020 </p>
+                            <p><b>Elenco:</b> Margote Robbie, Jernee Smollett, Mary Elizbeth Winstead e Ewan McGregor
+                            </p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselfilmes" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselfilmes" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="row-destaque">
+            <div class="container">
+                <h1 id="destaque">Em destaque</h1>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <img src="Imagens/cartaz1.jpg">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <img src="Imagens/cartaz2.jpg">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <img src="Imagens/cartaz3.jpg">
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <img src="Imagens/cartaz4.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="row-avaliacoes">
+            <div class="container">
+                <h1 id="avaliacoes">Últimas Avaliações</h1>
+                <div class="avaliacao1 col-12 col-sm-12 col-md-6 col-lg-4">
+                    <h4> <b> Hal Parker </b> </h4>
+                    <p> <b>Avaliação: </b> Capitã Marvel é INCRÍVEL, ótimas atuações, ótimo roteiro, personagens
+                        carismáticos e um plot twist de explodir cabeças!!!! Não sei o que podemos pedir a mais,
+                        ansioso pela
+                        continuação!!!</p>
+                    <p> 19/07/2020</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <h4> <b> Ludgero B.</b> </h4>
+                    <p> <b>Avaliação: </b> Mulher maravilha é um filme bom com boas atuações de Gal gadot e Cris pine.
+                        Boas
+                        associações com a segunda gere ,os alemães e Ares. Filme maravilhoso!</p>
+                    <p> 07/08/2020 </p>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <h4> <b> Rodrigo Vital </b> </h4>
+                    <p> <b>Avaliação: </b> Excelente crítica social, serve como inspiração para nossa reflexão acerca
+                        dos rumos que a humanidade está tomando. Filme excelente e que vale a pena rever.</p>
+                    <p> 03/10/2020 </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="row entrevistas">
+            <h1 id="entrevistas"> Entrevistas & Making Of</h1>
+        </section>
+
+        <section class="row novidades">
+            <h1 id="novidades"> Novidades </h1>
+        </section> -->
+
+    </main>
+
+</body>
+
+    <!-- <footer class="container-footer">
+        <p> Copyright 2020 - Disciplina de Desenvolvimento de Interfaces Web - ICEI PUC Minas </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script> -->
+
+</html> 
+
+
+<script src="scriptHome.js"></script>
+</body>
+
+</html>

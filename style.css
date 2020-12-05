@@ -1,0 +1,516 @@
+* 
+{ 
+  box-sizing: border-box;
+  list-style:none;
+  max-width:100%;
+}
+
+ul 
+{
+  padding:0;
+}
+
+body 
+{
+    font-family: 'Arial';
+    background-color: #d9d9d9;
+}
+
+form 
+{
+  padding:5px;
+}
+
+.container-header
+{
+  height: 150px;
+}
+
+input[type=search] 
+{ 
+	color: black;  
+	text-align: left;
+	cursor: pointer;
+	display: inline-block; 
+	letter-spacing: 4px;             
+	word-spacing: 20px; 
+ 
+}
+
+.container 
+{
+  width:800px;
+  margin:0 auto;
+  position:relative;
+}
+
+.films 
+{
+  display:grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 2.6%;
+  cursor:pointer;
+}
+
+.films .title 
+{
+  font-size: 18px;
+}
+
+.selectedFilm__poster 
+{
+  width:200px;
+}
+
+.selectedFilm__img 
+{
+  width:40%;
+}
+
+.selectedFilm__content
+{
+  width:59%;
+}
+
+.selectedFilm div 
+{
+  display:inline-block;
+  vertical-align:top;
+  padding:20px;
+}
+
+.selectedFilm 
+{
+    width: 750px;
+    margin: 0 auto;
+    position: fixed;
+    background: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  z-index:2;
+  border-radius:5px;
+}
+
+.selectedFilm p
+{
+    font-size:13px;
+}
+
+.selectedFilm__backdrop 
+{
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  display:none;
+}
+
+.bg 
+{
+    display:none;
+    background: black;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fa-times 
+{
+  position:absolute;
+  right:10px;
+  top:10px;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.favImg 
+{
+width:100%;
+}
+
+.view-fav 
+{
+    color: gold;
+    right: 5px;
+    padding: 5px;
+    z-index: 5;
+    position: absolute;
+}
+
+.favourite 
+{
+    position: absolute;
+    background: black;
+    width:20%;
+    right:0;
+    top:35px;
+    z-index:2;
+    display:none;
+}
+
+.favourite img 
+{
+    padding:10px;
+}
+
+.add-fav {
+  display:inline-block;
+  background:black;
+  color:#fff;
+  letter-spacing:px;
+  padding:5px 10px;
+  cursor:pointer;
+  font-size:14px;
+}
+
+#estrela :hover 
+{
+    color: gold;
+}
+
+.add-fav .fa 
+{
+    margin-left:5px;
+    transition: .3s all; 
+}
+
+.favourite__close {
+  color:#fff;
+}
+
+p 
+{
+  text-align: justify;
+}
+
+* 
+{ 
+  box-sizing: border-box;
+  list-style:none;
+  max-width:100%;
+}
+
+ul 
+{
+  padding:0;
+}
+
+body 
+{
+    font-family: 'Arial';
+}
+
+.input-group 
+{
+  padding:5px;
+}
+
+input[type=search] 
+{ 
+	color: black;  
+	text-align: left;
+	cursor: pointer;
+	display: inline-block; 
+	letter-spacing: 4px;             
+	word-spacing: 20px; 
+ 
+}
+
+.container 
+{
+  width:800px;
+  margin:0 auto;
+  position:relative;
+}
+
+.films 
+{
+  display:grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 2.6%;
+  cursor:pointer;
+}
+
+.films .title 
+{
+  font-size: 18px;
+}
+
+.selectedFilm__poster 
+{
+  width:200px;
+}
+
+.selectedFilm__img 
+{
+  width:40%;
+}
+
+.selectedFilm__content
+{
+  width:59%;
+}
+
+.selectedFilm div 
+{
+  display:inline-block;
+  vertical-align:top;
+  padding:20px;
+}
+
+.selectedFilm 
+{
+    width: 750px;
+    margin: 0 auto;
+    position: fixed;
+    background: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  z-index:2;
+  border-radius:5px;
+}
+
+.selectedFilm p
+{
+    font-size:13px;
+}
+
+.selectedFilm__backdrop 
+{
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  display:none;
+}
+
+.bg 
+{
+    display:none;
+    background: black;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fa-times 
+{
+  position:absolute;
+  right:10px;
+  top:10px;
+  font-size:20px;
+  cursor:pointer;
+}
+
+.favImg 
+{
+width:100%;
+}
+
+.view-fav 
+{
+    color: gold;
+    right: 5px;
+    padding: 5px;
+    z-index: 5;
+    position: absolute;
+}
+
+.favourite 
+{
+    position: absolute;
+    width:20%;
+    right:0;
+    top:35px;
+    z-index:2;
+    display:none;
+}
+
+.favourite img 
+{
+    padding:10px;
+}
+
+.add-fav {
+  display:inline-block;
+  color:#fff;
+  letter-spacing:px;
+  padding:5px 10px;
+  cursor:pointer;
+  font-size:14px;
+}
+
+
+.add-fav .fa 
+{
+    margin-left:5px;
+    transition: .3s all; 
+}
+
+.favourite__close {
+  color:#fff;
+}
+
+p 
+{
+  text-align: justify;
+}
+
+.logo 
+{
+    max-width: 150px;
+}
+
+header 
+{
+    background-color: #000
+}
+
+.nav
+{
+    position: absolute;
+    top: 40px;
+    padding-left: 170px;
+}
+
+.nav-link{
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.nav-link:hover 
+{
+    color: rgb(185, 35, 35);
+}
+
+.row-lancamentos
+{
+    background-color:rgb(173, 169, 169);
+    text-align: justify;
+}
+
+.row-destaque
+{
+    background-color: #fff;
+}
+
+.row-destaque img 
+{
+    padding: 25px;
+}
+
+.row-avaliacoes
+{
+    background-color:rgb(173, 169, 169);
+    text-align: justify;
+    padding: 15px;
+}
+
+.row-avaliacoes h1
+{
+    padding-top: 0 px;
+    padding: 5px;
+}
+
+footer
+{
+    padding-top: 80px;
+}
+  
+h1 
+{
+    color: #000;
+    text-align: center;
+}
+  
+.carousel-video-inner 
+{
+    text-align: center;  
+}
+
+.row
+{
+      padding: 30px;
+      color: #000;
+}
+
+.avaliacao1 img 
+{
+    width: 100%;
+}
+
+.container-footer
+{
+  text-align: center;
+  padding: 15px;
+}
+
+i
+{
+  margin-top: 1o;
+}
+
+img
+{
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h2
+{
+  font-weight: bolder;
+}
+
+#barra-pesquisa {
+  margin:0;
+  margin-top: 10px;
+  padding: 0;
+} 
+
+#barra-pesquisa .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: 200px;
+}
+
+#barra-pesquisa button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: absolute  ;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color:#D9230F;
+}
+
+.search-query:focus + button {
+  z-index: 3;   
+}
+
+li 
+{
+  left: 30%;  
+  transform: translate(-50%, 0)
+}
